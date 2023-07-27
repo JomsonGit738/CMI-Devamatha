@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.brocodes.cmidevamatha.ui.home.HomeFragment"
+        android:label="@string/menu_Devamatha_Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_administration"
+        android:name="com.brocodes.cmidevamatha.ui.administration.AdministrationFragment"
+        android:label="@string/menu_Administration"
+        tools:layout="@layout/fragment_administration" />
+
+    <fragment
+        android:id="@+id/nav_calendar"
+        android:name="com.brocodes.cmidevamatha.ui.calendar.CalendarFragment"
+        android:label="@string/menu_calendar"
+        tools:layout="@layout/fragment_calendar" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.brocodes.cmidevamatha.ui.SignOut"
+        android:label="@string/Profile"
+        tools:layout="@layout/fragment_sign_out" />
+</navigation>

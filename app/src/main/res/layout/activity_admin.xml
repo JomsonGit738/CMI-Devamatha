@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Admin.Admin">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Devamatha App Home News and Notification"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:textSize="18sp" />
+                <EditText
+                    android:id="@+id/news_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Message Title"
+                    android:layout_margin="20dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:background="@drawable/edittext_button_style_rounded"
+                    android:textSize="15sp"
+                    android:textColorHint="@color/black_overlay"/>
+                <EditText
+                    android:id="@+id/news_short_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Short Description for Notification"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:background="@drawable/edittext_button_style_rounded"
+                    android:textSize="15sp"
+                    android:inputType="textMultiLine"
+                    android:textColorHint="@color/black_overlay"/>
+
+                <EditText
+                    android:id="@+id/news_MultiLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textSize="15sp"
+                    android:background="@drawable/edittext_button_style_rounded"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:hint="Type the Long Description"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black_overlay"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine" />
+
+                <Button
+
+                    android:id="@+id/news_post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/edittext_button_style_rounded"
+                    android:text="Post"
+                    android:textColor="@color/black" />
+                <View
+                    android:background="#2e2e2e"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="16dp"/>
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FCM Notification Message to All users"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:textSize="18sp" />
+                <EditText
+                    android:id="@+id/message_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Message Title"
+                    android:layout_margin="20dp"
+                    android:layout_gravity="center"
+
+                    android:textColor="@color/black"
+                    android:background="@drawable/edittext_button_style_rounded"
+                    android:textSize="15sp"
+                    android:textColorHint="@color/black_overlay"/>
+
+                <EditText
+                    android:id="@+id/message_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textSize="15sp"
+                    android:background="@drawable/edittext_button_style_rounded"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:hint="Type the Content"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black_overlay"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine" />
+
+                <Button
+
+                    android:id="@+id/btn_message_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/edittext_button_style_rounded"
+                    android:text="Send"
+                    android:textColor="@color/black" />
+
+
+                <View
+                    android:background="#2e2e2e"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="16dp"/>
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/add_user_permission"
+                    android:layout_margin="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bulletin : Grant Permission for User"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:drawablePadding="10dp"
+                    android:layout_gravity="center"
+                     />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:id="@+id/user_permission_Recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"/>
+
+            </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.brocodes.cmidevamatha">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".OfflineFirebase"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_mary"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_mary_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CMIDevamatha.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".CustomAuth.CustomSignIn" />
+        <activity android:name=".CustomAuth.ResetPassword" />
+        <activity android:name=".CustomAuth.UserDetails" />
+        <activity android:name=".CustomAuth.CustomRegister" />
+        <activity android:name=".Admin.Admin" />
+        <activity android:name=".ui.bulletin.PostDetailActivity" />
+        <activity android:name=".ui.bulletin.pdf.PdfList" />
+        <activity
+            android:name=".ui.bulletin.Bulletin"
+            android:parentActivityName=".DashMain"
+            android:theme="@style/Theme.CMIDevamatha.NoActionBar" />
+        <activity
+            android:name=".ui.administration.AdminListView"
+            android:parentActivityName=".ui.administration.AdministrationFragment"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".introduction.Introduction"
+            android:theme="@style/Theme.CMIDevamatha.NoActionBar" />
+        <activity
+            android:name=".About"
+            android:parentActivityName=".DashMain"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/Theme.CMIDevamatha.NoActionBar" />
+        <activity
+            android:name=".ui.home.News_Result"
+            android:theme="@style/Theme.CMIDevamatha.NoActionBar" />
+        <activity
+            android:name=".ui.search.Search_Result"
+            android:parentActivityName=".ui.search.SearchMain"
+            android:theme="@style/Theme.CMIDevamatha.NoActionBar" />
+        <activity
+            android:name=".ui.search.SearchMain"
+            android:parentActivityName=".DashMain"
+            android:theme="@style/Theme.AppCompat.Light" />
+
+        <service
+            android:name=".Admin.InAppMessaging.FirebaseMessagingService"
+            android:permission="TODO"
+            tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".DashMain"
+            android:label="@string/title_activity_dash_main"
+            android:theme="@style/Theme.CMIDevamatha.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.OnlyMainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

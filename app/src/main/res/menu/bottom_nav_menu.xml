@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:id="@+id/one"
+    android:title="BirthDay"
+    android:icon="@drawable/ic_birthday"
+    app:cnb_backgroundColor="@color/purple_500"/>
+<item
+    android:id="@+id/two"
+    android:title="News"
+    android:icon="@drawable/ic_news"
+    app:cnb_backgroundColor="@color/purple_500"/>
+<item
+    android:id="@+id/three"
+    android:title="FeastDay"
+    android:icon="@drawable/ic_feast_day"
+    app:cnb_backgroundColor="@color/purple_500"/>
+<item
+    android:id="@+id/four"
+    android:title="Obituary"
+    android:icon="@drawable/ic_cross"
+    app:cnb_backgroundColor="@color/purple_500"/>
+</menu>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="5000"
+        motion:autoTransition="animateToEnd">>
+       <KeyFrameSet>
+           <KeyAttribute
+               motion:motionTarget="@+id/photo_imageView"
+               motion:framePosition="0"
+               android:scaleX="5"
+               android:scaleY="5" />
+           <KeyAttribute
+               motion:motionTarget="@+id/photo_imageView"
+               motion:framePosition="0"
+               android:alpha="0" />
+           <KeyAttribute
+               motion:motionTarget="@+id/word_imageView"
+               motion:framePosition="0"
+               android:alpha="0" />
+           <KeyAttribute
+               motion:motionTarget="@+id/word_imageView"
+               motion:framePosition="40"
+               android:alpha="0" />
+           <KeyAttribute
+               motion:motionTarget="@+id/photo_imageView"
+               motion:framePosition="50"
+               android:scaleX="1"
+               android:scaleY="1" />
+           <KeyAttribute
+               motion:motionTarget="@+id/photo_imageView"
+               motion:framePosition="73"
+               android:elevation="10dp" />
+           <KeyAttribute
+               motion:motionTarget="@+id/photo_imageView"
+               motion:framePosition="50"
+               android:alpha="1" />
+           <KeyAttribute
+               motion:motionTarget="@+id/word_imageView"
+               motion:framePosition="60"
+               android:alpha="1" />
+           <KeyAttribute
+               motion:motionTarget="@+id/textView4"
+               motion:framePosition="20"
+               android:alpha="-1" />
+           <KeyAttribute
+               motion:motionTarget="@+id/textView4"
+               motion:framePosition="0"
+               android:alpha="-1" />
+           <KeyAttribute
+               motion:motionTarget="@+id/textView4"
+               motion:framePosition="10"
+               android:alpha="-1" />
+           <KeyAttribute
+               motion:motionTarget="@+id/textView4"
+               motion:framePosition="30"
+               android:alpha="1" />
+           <KeyAttribute
+               motion:motionTarget="@+id/textView4"
+               motion:framePosition="40"
+               android:alpha="-1" />
+           <KeyAttribute
+               motion:motionTarget="@+id/textView4"
+               motion:framePosition="50"
+               android:alpha="1" />
+           <KeyAttribute
+               motion:motionTarget="@+id/textView4"
+               motion:framePosition="60"
+               android:alpha="-1" />
+           <KeyAttribute
+               motion:motionTarget="@+id/textView4"
+               motion:framePosition="70"
+               android:alpha="1" />
+           <KeyAttribute
+               motion:motionTarget="@+id/textView4"
+               motion:framePosition="80"
+               android:alpha="-1" />
+           <KeyAttribute
+               motion:motionTarget="@+id/textView4"
+               motion:framePosition="90"
+               android:alpha="1" />
+           <KeyAttribute
+               motion:motionTarget="@+id/textView4"
+               motion:framePosition="100"
+               android:alpha="-1" />
+           <KeyAttribute
+               motion:motionTarget="@+id/gifImageView2"
+               motion:framePosition="70"
+               android:alpha="1" />
+           <KeyAttribute
+               motion:motionTarget="@+id/gifImageView2"
+               motion:framePosition="100"
+               android:alpha="0" />
+       </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/gifImageView"
+            motion:layout_constraintBottom_toTopOf="@+id/photo_imageView"
+            motion:layout_constraintEnd_toStartOf="@+id/photo_imageView"
+            android:layout_width="155dp"
+            android:layout_height="138dp" />
+        <Constraint
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/gifImageView2"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            motion:layout_constraintVertical_bias="0.627"
+            android:layout_height="100dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.495"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="310dp"
+            android:id="@+id/word_imageView" />
+    </ConstraintSet>
+</MotionScene>

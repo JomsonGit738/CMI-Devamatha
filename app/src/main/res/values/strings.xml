@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">CMI Devamatha</string>
+    <string name="title_activity_dash_main">DashMain</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_admin">Admin</string>
+
+    <string name="menu_Devamatha_Home">Devamatha Home</string>
+    <string name="menu_Administration">Administration</string>
+    <string name="menu_calendar">Calendar</string>
+    <string name="menu_houses">Houses</string>
+    <string name="menu_bulletin">Bulletin</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Profile">My Profile</string>
+
+    <string name="ruf_note">No Internet Connection…!No Internet Connection…!No Internet Connection…!No Internet Connection…!No Internet Connection…!No Internet Connection…!No Internet Connection…!No Internet Connection…!No Internet Connection…!No Internet Connection…!No Internet Connection…!No Internet Connection…!No Internet Connection…!No Internet Connection…!No Internet Connection…!</string>
+    <string name="title_activity_splash_screen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="todo">TODO</string>
+    <string name="loading">Loading</string>
+    <string name="aboutprovince">Devamatha Province,Patturaikkal,\nThiruvambadi P.O.\nThrissur - 680022\nPhone: 0091 - (0)487 - 2334430, 2337373\nE-mail: devmatha@gmail.com\n
+Web: www.devamatha.in\n\n Ownership and Initiative by CMI Devamatha Province. Application developed by Brocodez  </string>
+    <string name="Maintenance">Firebase Database Error…! Sorry, Application Under Maintenance.. :)</string>
+    <string name="Thanks">Akhil Nellissery CMI\n
+Arun Vadassery CMI\n
+Austin Kallely CMI\n
+Bibin Thekkanath CMI\n
+Christo Eluvathingal CMI\n
+Glimson Parappully CMI\n
+Ijo Chiriyankandath CMI\n
+Ivan Kavungal CMI\n
+Iwin Veliyan CMI\n
+Jerin Alappat CMI\n
+Jomson Pullokkaran CMI\n
+Jorry Aloor Viyyokkaran CMI\n
+Linston Olakkengil CMI\n
+Remi Vadakkan CMI\n
+Shijo Tharayil CMI\n
+Fr. Shyson Poruthoor CMI\n
+Sijo Thattil Thekkambath CMI\n
+Terence Cheerakathil CMI.
+
+    </string>
+
+</resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "409367079394",
+    "project_id": "cmi-devamatha",
+    "storage_bucket": "cmi-devamatha.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:409367079394:android:22b87d33e8e39f714571bb",
+        "android_client_info": {
+          "package_name": "com.brocodes.cmidevamatha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "409367079394-udhc85giqpfqjng80h6ticmubfgsdev7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBobCrUht5n738DU-1b2ZIJc9uyBsPq0Hk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "409367079394-udhc85giqpfqjng80h6ticmubfgsdev7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_view_sidebar_nav"
+            android:title="@string/menu_Devamatha_Home" />
+       <item
+           android:id="@+id/nav_administration"
+           android:icon="@drawable/ic_administration"
+           android:title="@string/menu_Administration" />
+       <item
+           android:id="@+id/nav_calendar"
+           android:icon="@drawable/ic_baseline_calendar"
+           android:title="@string/menu_calendar" />
+        <item
+            android:id="@+id/nav_houses"
+            android:icon="@drawable/ic_baseline_location_city_nav"
+            android:title="@string/menu_houses" />
+        <item
+            android:id="@+id/nav_bulletin"
+            android:icon="@drawable/ic_baseline_bulletin"
+            android:title="@string/menu_bulletin" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_log_out"
+            android:title="@string/Profile" />
+    </group>
+</menu>

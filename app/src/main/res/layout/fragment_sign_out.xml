@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/fragment_back"
+    tools:context=".ui.SignOut">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/user_photo_sign_out"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="124dp"
+        android:layout_height="120dp"
+        android:contentDescription="@string/nav_header_desc"
+        android:elevation="40dp"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="10dp" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/user_name_sign_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name of the User"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/user_email_sign_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Email Address"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_gravity="center_horizontal" />
+    <TextView
+        android:id="@+id/rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Encourage the newbie Developer\nClick me to Rate it"
+        android:textColor="@color/purple_700"
+        android:textSize="15sp"
+        android:layout_gravity="center_horizontal" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="center_horizontal"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/ratestars"/>
+    <Button
+        android:id="@+id/user_sign_out_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="Sign Out"
+        android:layout_marginTop="45dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/copy_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Copy ID"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:textAllCaps="true"
+        android:layout_gravity="center_horizontal" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/copy_id_animation"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        app:lottie_loop="false"
+        app:lottie_autoPlay="false"
+        app:lottie_rawRes="@raw/check"/>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_admin"
+        android:orderInCategory="80"
+        android:title="@string/action_admin"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_permission"
+        android:orderInCategory="90"
+        android:title="Permission"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_img_main"
+        android:icon="@drawable/devamatha1"
+        android:title="icon"
+        app:showAsAction="ifRoom" />
+</menu>

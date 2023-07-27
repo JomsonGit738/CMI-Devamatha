@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".CustomAuth.UserDetails">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="15dp"
+        android:layout_width="150dp"
+        android:background="@drawable/user"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:id="@+id/popup_image"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Profile Image"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="11dp"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:gravity="center"
+        tools:ignore="RtlHardcoded,RtlSymmetry" />
+    <EditText
+        android:background="@drawable/edittext_button_style_rounded"
+        android:id="@+id/popup_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type Your Name"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black_overlay" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:id="@+id/submit"
+        tools:ignore="RtlHardcoded,RtlSymmetry" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If you want to change your Name and Profile Image, change now and click Update"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:id="@+id/update_message"
+        tools:ignore="RtlHardcoded,RtlSymmetry" />
+    <Button
+        android:id="@+id/update_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="skip"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/light_blue_900"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:id="@+id/Skip"
+        tools:ignore="RtlHardcoded,RtlSymmetry" />
+</LinearLayout>

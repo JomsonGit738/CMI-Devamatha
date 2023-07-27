@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.administration.AdministrationFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_gravity="start"/>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardElevation="20dp"
+            android:clickable="true"
+            app:cardCornerRadius="26dp"
+            android:layout_margin="10dp">
+        <RelativeLayout
+            android:id="@+id/relative_devamatha"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/devaadmini"/>
+
+            <TextView
+                android:id="@+id/ttttt"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="bottom"
+                android:background="@drawable/bg_overlay"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="20dp"
+                android:paddingBottom="10dp"
+                android:text="DEVAMATHA PROVINCE ADMINISTRATION"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+         </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardElevation="20dp"
+        android:clickable="true"
+        app:cardCornerRadius="26dp"
+        android:layout_margin="10dp">
+        <RelativeLayout
+            android:id="@+id/relative_dhule"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/chavaraadmin"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="bottom"
+                android:background="@drawable/bg_overlay"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="20dp"
+                android:paddingBottom="10dp"
+                android:text="ST. KURIAKOSE ELIAS CHAVARA REGION
+DHULE-MAHARASHTRA
+"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardElevation="20dp"
+        android:clickable="true"
+        app:cardCornerRadius="26dp"
+        android:layout_margin="10dp">
+        <RelativeLayout
+            android:id="@+id/relative_thomas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/thomasadmin"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="bottom"
+                android:background="@drawable/bg_overlay"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="20dp"
+                android:paddingBottom="10dp"
+                android:text="ST. THOMAS REGION, EAST AFRICA"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardElevation="20dp"
+        android:clickable="true"
+        app:cardCornerRadius="26dp"
+        android:layout_margin="10dp">
+        <RelativeLayout
+            android:id="@+id/relative_madagaskar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/thereseadmi"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="bottom"
+                android:background="@drawable/bg_overlay"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="20dp"
+                android:paddingBottom="10dp"
+                android:text="ST. THERESE DE LISIEUX
+SUB-REGION MADAGASCAR
+
+
+"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardElevation="20dp"
+            android:clickable="true"
+            app:cardCornerRadius="26dp"
+            android:layout_margin="10dp">
+            <RelativeLayout
+                android:id="@+id/relative_provincials_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/provinadmin"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:gravity="bottom"
+                    android:background="@drawable/bg_overlay"
+                    android:layout_alignParentBottom="true"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="FORMER PROVINCIAL DEPARTMENT COUNCILS  "
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".CustomAuth.CustomRegister">
+
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="top"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp">
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie"
+            android:layout_gravity="top"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/register"
+            app:lottie_loop="true" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create a new Account"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_700"
+            android:gravity="center_horizontal"
+           />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create an account in Devamatha Application"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="@color/black_overlay"
+            android:gravity="center_horizontal"
+            />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:paddingStart="20sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black_overlay"
+            android:background="@color/light_gray"
+            android:hint="Email Adress"
+            android:inputType="textEmailAddress"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:paddingStart="20sp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black_overlay"
+            android:hint="New Password"
+            android:textSize="15sp"
+            android:background="@color/light_gray"
+            android:inputType="textPassword"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:paddingStart="20sp"
+            android:textColor="@color/black"
+            android:background="@color/light_gray"
+            android:textColorHint="@color/black_overlay"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            tools:ignore="RtlSymmetry" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:text="Register"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already registered!"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+            <Button
+                android:id="@+id/tvLoginHere"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:text="Sign In"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="13sp"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
